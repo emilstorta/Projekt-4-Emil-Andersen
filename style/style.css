@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* #306649 */
+
+.logohjem {
+    width: auto;
+    height: 100px;
+    background-color: #306649;
+    float:left; 
+}
+
+.navbar {
+    width: 88%;
+    height: 100px;
+    background-color: #306649;
+    float: right;
+}
