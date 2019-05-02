@@ -3,24 +3,43 @@
     padding: 0px;
 }
 
-/* #306649 */
+h1{
+    color: #306649;
+    font-size: 36px;
+    text-shadow: 0px 1px 3px rgba(48,102,73,0.3);
+    font-family: "oswald", sans-serif;
+} 
+h2{
+    color: #383838;
+    font-weight: bold;
+    font-family: "oswald", sans-serif;
+    font-size: 24px;
+}
+h3{
+    color: #383838;
+    font-weight: bold;
+    font-family: "oswald", sans-serif;
+    font-size: 18px;
+}
 
 body{
     width: 100%;
     font-family: "oswald", sans-serif;
     font-size: 14px;
     line-height: 1.5;
-    padding: 0;
     margin-left: auto;
     margin-right: auto;
     background-color:rgba(48, 102, 73, .35);
 }
 
 .container{
-    width:80%;
+    width:95%;
     margin: auto;
+    padding-top: 15px;
     overflow: hidden;
 }
+
+/* Navbar */
 
 .logohjem {
     width: auto;
@@ -57,15 +76,17 @@ header .highlight, header .current a{
 header a:hover{
     color: #ffdc00;
     font-weight: bold;
+    transform: scale(0.2)
 }
 
 header li{   
     float: left;
     display: inline;
     padding: 0 30px 0 30px;
-    margin-top: 40px;
     font-size: 24px;
     text-decoration: none;
+    margin: 45px 20px 20px 20px;
+    border-radius: 2px;
 }
 
 header a{
@@ -76,17 +97,56 @@ header a{
 
 /* Hjem Content */
 .content{
-    font-family: "arial", sans-serif;
-    width: 100%;
-    height: 300px;
+    font-family: "Arial", sans-serif;
+    width: 65%;
+    margin: auto;
+    float: left;
+    padding-bottom: 20px;
 }
+
+.liste{
+    padding-left: 15px;
+}
+
+.sidebar{
+    font-family: "Arial", sans-serif;
+    width: 35%;
+    margin: auto;
+    float: right
+}
+
+.forsidelinks{
+    color: #306649;
+}
+/* Om */
+
+.contentom{
+    font-family: "Arial", sans-serif;
+    width: 65%;
+    margin: auto;
+    float: left;
+    padding-bottom: 20px;
+}
+.liste2{
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
 /* footer */
 
 footer{
     padding: 20px;
     background-color: #306649;
-    color: #ffdc00;
-    text-align: center; 
+    color: #ffffff;
+    border-top: #ffdc00 3px solid;
+    height: 50px;
+}
+.rightfooter{
+    float: right;
+}
+.leftfooter{
+    width: 50%;
+    float: left;
 }
 
 .btn{
@@ -99,11 +159,22 @@ footer{
 
 /* Media Quaries */
 
-@media(max-width:730px){
+@media(max-width:800px){
     header li{
         padding: 0 15px 0 15px;
+        margin: 45px 5px 5px;
     }
-    .logokommune{
+    .logohjem{
+        width: 90px;
+        height: auto;
+    }
+    .hjemimg{
         display: none;
+    }
+    .content{
+        width: 100%;
+    }
+    .contentom{
+        width: 100%;
     }
 } 
