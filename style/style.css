@@ -5,16 +5,105 @@
 
 /* #306649 */
 
+body{
+    width: 100%;
+    font-family: "oswald", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(48, 102, 73, .35);
+}
+
+.container{
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+}
+
 .logohjem {
     width: auto;
     height: 100px;
     background-color: #306649;
-    float:left; 
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
 }
-
-.navbar {
-    width: 88%;
+.logokommune {
+    width: auto;
     height: 100px;
     background-color: #306649;
     float: right;
+    padding-left: 10px;
+    padding-top: 10px;
 }
+
+.navbar {
+    width: 100%;
+    height: 120px;
+    background-color: #306649;
+    float: right;
+    border-bottom: #ffdc00 3px solid;
+    font-family: "oswald", sans-serif;
+}
+
+header .highlight, header .current a{
+    color: #ffdc00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #ffdc00;
+    font-weight: bold;
+}
+
+header li{   
+    float: left;
+    display: inline;
+    padding: 0 30px 0 30px;
+    margin-top: 40px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Hjem Content */
+.content{
+    font-family: "arial", sans-serif;
+    width: 100%;
+    height: 300px;
+}
+/* footer */
+
+footer{
+    padding: 20px;
+    background-color: #306649;
+    color: #ffdc00;
+    text-align: center; 
+}
+
+.btn{
+    color: #ffdc00;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+/* Media Quaries */
+
+@media(max-width:730px){
+    header li{
+        padding: 0 15px 0 15px;
+    }
+    .logokommune{
+        display: none;
+    }
+} 
