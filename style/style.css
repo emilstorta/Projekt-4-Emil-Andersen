@@ -132,6 +132,14 @@ header a{
     margin-top: 10px;
 }
 
+/* frivillig*/
+
+.ytvideo{
+	width: 420px;
+	height: 236px;
+	border: 0px;
+}
+
 /* footer */
 
 footer{
